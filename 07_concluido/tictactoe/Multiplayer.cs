@@ -136,5 +136,12 @@
         {
 
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            TelaInicial t = new TelaInicial();
+            t.Show();
+            this.Close();
+        }
     }
 }

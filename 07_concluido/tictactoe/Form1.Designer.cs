@@ -42,6 +42,7 @@
             button9 = new Button();
             button10 = new Button();
             AImoves = new System.Windows.Forms.Timer(components);
+            button11 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -202,11 +203,25 @@
             AImoves.Interval = 1000;
             AImoves.Tick += AImove;
             // 
+            // button11
+            // 
+            button11.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button11.Location = new Point(406, 556);
+            button11.Margin = new Padding(4);
+            button11.Name = "button11";
+            button11.Size = new Size(129, 44);
+            button11.TabIndex = 6;
+            button11.Tag = "restart";
+            button11.Text = "Tela Inicial";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(585, 629);
+            Controls.Add(button11);
             Controls.Add(button10);
             Controls.Add(button9);
             Controls.Add(button8);
@@ -243,5 +258,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Timer AImoves;
+        private Button button11;
     }
 }
